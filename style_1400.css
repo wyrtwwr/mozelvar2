@@ -1,0 +1,239 @@
+@media (min-width: 1000px) and (max-width: 1450px) {
+.block1 {
+    height: 500px;
+    padding-top: 170px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/bg_block1.png);
+     animation: bgSlide 12s infinite;
+}
+
+
+
+
+  .title_block2 {
+    font-size: 36px; /* чуть меньше для ширины */
+    padding: 0 80px; /* отступы сохраняем */
+  }
+
+  .cards_block2 {
+    display: flex;
+    flex-wrap: nowrap; /* запрещаем перенос */
+    justify-content: space-between; /* равномерное распределение */
+    gap: 20px;
+    padding: 0 80px;
+    box-sizing: border-box;
+  }
+
+  .card1b2 {
+    flex: 1 1 0;        /* все одинаковой ширины */
+    max-width: calc((100% - 40px)/3); /* три карточки + 20px gap слева и справа */
+    margin: 0;          /* сброс вертикальных отступов */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardimg {
+    width: 100%;        /* адаптивная ширина изображения */
+    display: block;
+  }
+
+  .card2_txt {
+    align-items: flex-start;
+    margin-top: 20px;   /* меньше отступ, чтобы не сдвигало */
+  }
+
+  .txt_c2 h1 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+  }
+
+  .txt_c2 p {
+    font-size: 13px;
+  }
+
+  
+  .on1 { width: 40px; }   /* меньше прежних 55px */
+  .on2, .on3 { width: 75px; } /* меньше прежних 100px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .cards-wrapper {
+    /* Убираем фиксированную ширину колонок, делаем их гибкими */
+    grid-template-columns: repeat(3, 1fr); /* Три равные колонки */
+    /* Уменьшаем отступы по бокам, чтобы освободить место для карточек */
+    padding: 0 40px; /* Было 80px, уменьшаем до 40px */
+    gap: 16px; /* Фиксируем минимальный зазор между карточками */
+  }
+
+  .card {
+    /* Ширина карточки теперь 100% от родительской колонки (grid сам всё поделит) */
+    width: 100%;
+    /* Можно чуть уменьшить высоту, если карточки начинают казаться слишком высокими */
+    /* height: auto; */ /* Раскомментируйте, если нужно подогнать высоту */
+  }
+
+  /* Если картинка внутри начинает вылезать за границы */
+  .img_in_bl5 {
+    width: 100%;
+    height: auto;
+    
+    object-fit: cover; /* Чтобы картинка красиво вписалась, если пропорции нарушатся */
+  }
+.card_filling p {
+
+font-size: 12px;
+
+
+}
+@media (min-width: 1000px) and (max-width: 1265px) {
+
+  .txt_c2 h1 {
+    font-size: 25px; 
+    margin-bottom: 10px;
+  }
+
+  .txt_c2 p {
+    font-size: 13px;
+  }
+
+  .block1 {
+    height: 400px;
+    padding-top: 170px;
+    padding-bottom: 150px;
+    padding-left: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/bg_block1.png);
+     animation: bgSlide 12s infinite;
+}
+
+
+
+
+
+
+.btn_bl1 {
+    font-size: 19px;
+    width: 350px;
+    height: 44px;
+    border: 4px solid white;
+    border-radius: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-self: flex-end; /* ← прижимает вправо */
+    margin-bottom: 26px; 
+}
+.text_block1 {
+    width: max-content;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.text_block1 h1{ 
+    text-transform: uppercase;
+    color: white;
+font-weight: 600;
+font-size: 27px;
+
+}
+.bl1_h1_1 {
+    color: white;
+    font-weight: bold;
+font-size: 43px;
+}
+.bl1_h1_2 {
+    color: white;
+        font-weight: 400;
+font-size: 19px;
+}
+.btn_arrow {
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+  
+}
+
+
+
+
+
+
+
+
+
+  /* Заголовок */
+  .block4 h1 {
+    font-size: 36px;           /* немного меньше для сжатой ширины */
+    padding: 0 80px;           /* фиксированные отступы слева и справа */
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  /* Сетка изображений */
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* две колонки */
+    grid-template-areas:
+      "img1 img2"
+      "img1 img3";
+    gap: 16px;
+    padding: 0 80px;                 /* отступы от краев сохраняем */
+    box-sizing: border-box;
+  }
+
+  /* Изображения */
+  .img {
+    width: 100%;    /* адаптивная ширина */
+    height: auto;
+    display: block;
+  }
+
+  /* Главные изображения сетки */
+  .img1 { max-width: 500px; }   /* уменьшено с 590px */
+  .img2 { max-width: 550px; }   /* уменьшено с 650px */
+  .img3 { 
+    max-width: 620px;            /* уменьшено с 720px */
+    margin-top: -20px;           /* чуть меньше смещение, чтобы не съезжало */
+    margin-left: -40px;          /* подкорректировано */
+  }
+
+  .img4 { display: none; }
+}
+
+
+
+.up_of_card {
+    position: absolute;
+  top: 0;
+ left: 80px;
+ font-weight: 700;
+font-size: 35px;
+line-height: 108%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #0f0f0f;
+  display: flex;
+
+}
+}

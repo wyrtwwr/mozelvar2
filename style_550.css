@@ -1,0 +1,433 @@
+@media (max-width: 550px) {
+
+    .block1 {
+    padding: 30px;
+   height: 200px;        /* фиксированная высота фона */
+    background-image: url(img/bg_block1_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: bgSlide 12s infinite;
+}
+
+/* убираем блик */
+    .btn-circle::before {
+        display: none;
+         color: rgb(255, 255, 255);
+        background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+    }
+
+    /* отключаем все анимации и переходы */
+    .btn-circle,
+    .btn-icon {
+        color: rgb(255, 255, 255);
+        background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+        transition: none;
+        border-color: rgb(255, 255, 255);
+    }
+
+    /* убираем hover-эффекты */
+    .btn-circle:hover {
+        background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+
+    .btn-circle:hover + .btn-icon {
+       background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+        color: rgb(255, 255, 255);
+        transform: none;
+    }
+
+
+
+    .btn-circle {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 2px solid #bf1f32;
+  border-radius: 26px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+  position: relative; /* для псевдоэлемента блика */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-icon {
+  padding: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #bf1f32; /* белая рамка */
+  color: #fff; /* белая стрелка */
+  margin-left: 0px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%); /* такой же фон как у кнопки */
+}
+
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.btn_arrow {
+    margin-top: 135px;
+}
+
+
+
+.text_block1 {
+  margin-top: 35px;
+    width: max-content;
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.text_block1 h1{ 
+    text-transform: uppercase;
+    color: white;
+font-weight: 600;
+font-size: 10px;
+
+}
+.bl1_h1_1 {
+    color: white;
+    font-weight: bold;
+font-size: 14px;
+}
+.bl1_h1_2 {
+    color: white;
+        font-weight: 400;
+font-size: 8px;
+}
+
+
+.btn_bl1 {
+    font-size: 7px;
+    width: 122px;
+    height: 14px;
+    border: 2px solid white;
+    border-radius: 11px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end; /* ← прижимает вправо */
+    margin-bottom: 10px; 
+}
+
+
+
+
+
+  .txt_c2 h1 {
+    width: auto;      /* ширина под контент */
+    font-size: 35px;
+    margin-bottom: 3px;
+  }
+
+  .txt_c2 p {
+    font-size: 14px;
+    line-height: 1.3;
+  } 
+  .on1 { width: 50px; }
+  .on2, .on3 { width: 85px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px) { 
+    .btn-circle {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 2px solid #bf1f32;
+  border-radius: 26px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+  position: relative; /* для псевдоэлемента блика */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-icon {
+  padding: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #bf1f32; /* белая рамка */
+  color: #fff; /* белая стрелка */
+  margin-left: 0px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%); /* такой же фон как у кнопки */
+}
+  .block4 h1 {
+    padding: 0px 30px 0px 30px;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+    .block4 {
+      margin-top: 40px;
+    }
+
+
+
+
+
+
+
+
+   .up_of_card {
+    max-width: 250px;
+    position: absolute;
+  top: 16px;
+ left: 30px;
+ font-weight: 700;
+font-size: 18px;
+line-height: 108%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #0f0f0f;
+  display: flex;
+
+}
+.image_block7 {
+  min-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -50px;
+    position: relative;
+}
+  .image_block7 img {
+    display: block;
+    margin: -0px auto 0px; /* центр по горизонтали */
+    width: 100%;
+    max-width: 100%;
+    left: auto;
+    margin-bottom: 20px;
+  }
+    .mobile_title {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+  .btn_block7_desktop {
+    white-space: none;
+    text-align: center;
+    justify-content: center;
+    width:100%;
+     font-size: 4.5vw;
+     margin-left: 10px;
+  }
+.txt_block7_desktop {
+  margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+.block8 {
+   padding: 0px 30px;
+}
+  .block8_in{
+   
+    flex-direction: column; /* изображение сверху, текст снизу */
+    padding: 0 20px;
+    text-align: center; /* если нужно выравнивание текста */
+  }
+
+  .block8__img {
+    margin-top: 30px;
+    max-width: 90%; /* картинка во всю ширину блока */
+    margin-bottom: 20px;
+  }
+
+  .block8__content {
+    max-width: 100%;
+  }
+
+  .block8__title {
+    font-weight: 700;
+font-size: 20px;
+line-height: 108%;
+text-transform: uppercase;
+text-align: center;
+color: #0f0f0f;
+  }
+
+  .block8__text {
+   font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+text-align: center;
+color: #080708;
+margin-bottom: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.block9 {
+  margin-top: 100px;
+  padding: 0px 30px;
+}
+.block9 h1{
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+  .dek_bl9 {
+    display: none;
+    padding: 0px 30px;
+  }
+
+  .mob_bl9 {
+    display: block;
+            width: calc(100% + 161px);
+    max-width: none;
+        margin-left: -81px;
+        margin-right: -30px;
+    position: relative;
+  }
+
+  .txt_block9 {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .txt_block9 p {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .cta-content {
+    width: 100%;
+  }
+
+  .title-top,
+  .title-bottom {
+    font-size: 18px;
+  }
+
+  .cta-contacts {
+    flex-direction: row;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  /* COLOR FIX */
+.color2,
+.color4 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title_block11 {
+  margin: 80px 30px 0px 30px;
+  display: block;
+  text-align:center ;
+  font-weight: 700;
+font-size: 24px;
+line-height: 108%;
+text-transform: uppercase;
+text-align: center;
+color: #0f0f0f;
+}
+
+
+        .mobileslide11_textBlock {
+            font-size: 14px;
+            line-height: 114%;
+            text-align: center;
+            color: #080708;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .block11 {
+          margin: auto;
+            width: 92%;
+            min-height: 43vh;
+          
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 0px; /* Отступы 30px по бокам */
+        }
+}
+
+@media (max-width: 440px) {
+  .image_block7 {
+    
+    justify-content: center;
+  }
+
+  .image_block7 img {
+    position: relative;      /* сбрасываем возможные смещения */
+    display: block;
+    margin: 0px auto 20px;   /* центр */
+    width: 90%;
+    max-width: 90%;
+    left: 10px;
+    right: 0;
+  }
+}

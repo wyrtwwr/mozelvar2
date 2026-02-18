@@ -1,0 +1,329 @@
+@media (max-width: 850px) {
+
+    header {
+        height: auto;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 100;
+    }
+
+
+    .center_header {
+        width: 90%;
+    }
+
+    .logo_box {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    /* логотип */
+    .logo_box img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 150px;
+    }
+
+    /* бургер справа */
+    .burger {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        display: flex;
+    }
+
+    /* телефон и почта снизу */
+    .right_txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 100%;
+    }
+
+    .right_txt h3 {
+        margin: 0;
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    /* меню */
+    .link_box {
+        position: absolute;
+        top: 77%;
+        left: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+        z-index: 10;
+    }
+
+    .link_box.active {
+        display: flex;
+    }
+
+    /*блок 1*/
+
+.block1 {
+    padding: 30px;
+   height: 440px;        /* фиксированная высота фона */
+  
+    background-image: url(img/bg_block1_mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: bgSlide 12s infinite;
+}
+
+
+.btn_bl1 {
+    font-size: 19px;
+    width: 350px;
+    height: 44px;
+    border: 4px solid white;
+    border-radius: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    align-self: flex-end; /* ← прижимает вправо */
+    margin-bottom: 23px; 
+}
+.text_block1 {
+    margin-top: 130px;
+    width: max-content;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_block1 h1 { 
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 19px; /* было 27px */
+}
+
+.bl1_h1_1 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px; /* было 43px */
+}
+
+.bl1_h1_2 {
+    color: white;
+    font-weight: 400;
+    font-size: 11px; /* было 19px */
+}
+
+
+/* убираем блик */
+    .btn-circle::before {
+        display: none;
+         color: rgb(255, 255, 255);
+        background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+    }
+
+    /* отключаем все анимации и переходы */
+    .btn-circle,
+    .btn-icon {
+        color: rgb(255, 255, 255);
+        background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+        transition: none;
+        border-color: rgb(255, 255, 255);
+    }
+
+    /* убираем hover-эффекты */
+    .btn-circle:hover {
+        background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+
+    .btn-circle:hover + .btn-icon {
+       background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+        color: rgb(255, 255, 255);
+        transform: none;
+    }
+
+
+
+    .btn-circle {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 36px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+background: radial-gradient(315.13% 323.48% at 23.74% -32.66%, #bf1f32 0%, #590f17 100%);
+  position: relative; /* для псевдоэлемента блика */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.btn_arrow {
+    margin-top: 175px;
+}
+
+
+
+
+
+
+ .title_block2 {
+    font-size: 24px;
+    padding: 0 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Карточки */
+  .cards_block2 {
+    padding: 0 15px;
+    gap: 15px;
+  }
+
+  .card1b2 {
+    max-width: 100%;  /* не больше ширины экрана */
+    margin: 5px 0;
+  }
+
+  .cardimg {
+    width: 100%;      
+    max-width: 100%;  
+    height: auto;
+  }
+
+  /* Текст внутри карточки */
+  .txt_c2 h1 {
+    width: auto;      /* ширина под контент */
+    font-size: 50px;
+    width: 500px;
+    margin-bottom: 3px;
+  }
+
+  .txt_c2 p {
+    font-size: 23px;
+    line-height: 1.3;
+  }
+
+  /* Иконки */
+  .on1 { width: 90px; }
+  .on2, .on3 { width: 105px; }
+
+
+  /* Контейнер с текстом и иконкой */
+  .card2_txt {
+    flex-direction: row;  /* остаётся горизонтальным */
+    align-items: center;
+    gap: 10px;           /* расстояние между иконкой и текстом */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card2_txt img {
+    margin-right: 10px;  /* отступ справа */
+  }
+
+
+
+
+
+
+
+.block3 {
+display: none;
+}
+.block4 {
+display: block;
+}
+.block5 {
+display: none;
+}
+
+.block6 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 0 30px;          /* ← единственный отступ от краёв */
+  box-sizing: border-box;
+}
+
+/* Заголовки */
+.title_block6 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 121%;
+  letter-spacing: 0.05em;
+  color: #0f0f0f;
+
+  margin: 0;               /* ← никаких лишних пробелов */
+}
+
+/* Изображения */
+.block6_img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  margin: 0px 0px 20px 0px;               /* ← строго без отступов */
+}
+
+/* Переключение изображений */
+.bl6_PC {
+  display: none;
+}
+
+.bl6_mob {
+  display: block;
+}
+
+
+
+
+
+
+  .up_of_card {
+    position: absolute;
+  top: 0;
+ left: 30px;
+ font-weight: 700;
+font-size: 25px;
+line-height: 108%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #0f0f0f;
+  display: flex;
+
+}
+}
