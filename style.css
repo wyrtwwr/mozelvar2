@@ -357,9 +357,10 @@ background: #fff;
     display: flex;
     align-items: center;
     margin-top: 50px;
-    
-  
+    justify-content: center;
+
 }
+
 
 .btn-circle2 {
   display: inline-flex;
